@@ -1,8 +1,10 @@
 import Checker.{BlackUser, CheckUser, WhiteUser}
 import Recorder.NewUser
 import Storage.AddUser
+import scala.concurrent.duration._
 import akka.actor.{Actor, ActorRef}
 import akka.util.Timeout
+import akka.pattern.ask
 
 /**
   * Created by Ankit on 30-12-2016.
